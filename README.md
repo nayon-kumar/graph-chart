@@ -1,1 +1,1 @@
-# graph-chart
+# Graph Chart
