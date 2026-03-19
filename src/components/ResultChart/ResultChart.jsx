@@ -7,7 +7,7 @@ const ResultChart = ({ marksPromise }) => {
   return (
     <div className="flex flex-col items-center gap-10">
       <h3 className="text-2xl mt-10 text-center font-bold">
-        Students Marks LineChart
+        Students Marks Line Chart
       </h3>
       <LineChart
         className="w-[90%] mx-auto"

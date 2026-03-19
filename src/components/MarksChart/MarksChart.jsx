@@ -22,7 +22,7 @@ const MarksChart = ({ allMarksPromise }) => {
   return (
     <div>
       <h3 className="text-2xl my-10 text-center font-bold">
-        Students Marks BarChart
+        Students Marks Bar Chart
       </h3>
       <BarChart
         responsive
