@@ -1,6 +1,6 @@
 import { RechartsDevtools } from "@recharts/devtools";
 import React, { use } from "react";
-import { Pie, PieChart } from "recharts";
+import { Pie, PieChart, Tooltip } from "recharts";
 
 const StraightGraph = ({ straightPromise }) => {
   const straightDataRes = use(straightPromise);
@@ -23,6 +23,7 @@ const StraightGraph = ({ straightPromise }) => {
           label
           isAnimationActive={true}
         />
+        <Tooltip />
         <RechartsDevtools />
       </PieChart>
     </div>
