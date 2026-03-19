@@ -1,5 +1,13 @@
 import React, { use } from "react";
-import { CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from "recharts";
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { RechartsDevtools } from "@recharts/devtools";
 
 const ResultChart = ({ marksPromise }) => {
@@ -22,6 +30,7 @@ const ResultChart = ({ marksPromise }) => {
         <Line dataKey={"chemistry"} stroke="green" />
         <Line dataKey={"math"} stroke="blue" />
         <Legend />
+        <Tooltip />
         <RechartsDevtools />
       </LineChart>
     </div>

@@ -1,5 +1,13 @@
 import React, { use } from "react";
-import { Area, AreaChart, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  Legend,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const ResultArea = ({ resultAreaPromise }) => {
   const resultResponse = use(resultAreaPromise);
@@ -15,6 +23,7 @@ const ResultArea = ({ resultAreaPromise }) => {
         responsive
         data={marksData}
       >
+        <CartesianGrid />
         <XAxis dataKey="name" niceTicks="snap125" />
         <YAxis niceTicks="snap125" />
         <Tooltip />
@@ -31,6 +40,7 @@ const ResultArea = ({ resultAreaPromise }) => {
           fill="#9b59b6"
         />
         <Area type="monotone" dataKey="math" stroke="#2ecc71" fill="#2ecc71" />
+        <Legend />
       </AreaChart>
     </div>
   );
